@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F20AE621C53E855006659F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AE611C53E855006659F5 /* main.m */; };
+		9F20AE651C53E855006659F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AE641C53E855006659F5 /* AppDelegate.m */; };
+		9F20AE6D1C53E855006659F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F20AE6C1C53E855006659F5 /* Assets.xcassets */; };
+		9F20AE7B1C53E855006659F5 /* awajiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AE7A1C53E855006659F5 /* awajiTests.m */; };
+		9F20AE861C53E855006659F5 /* awajiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AE851C53E855006659F5 /* awajiUITests.m */; };
+		9F20AE951C53E8F5006659F5 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AE941C53E8F5006659F5 /* FeedViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F20AE771C53E855006659F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F20AE551C53E854006659F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F20AE5C1C53E854006659F5;
+			remoteInfo = awaji;
+		};
+		9F20AE821C53E855006659F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F20AE551C53E854006659F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F20AE5C1C53E854006659F5;
+			remoteInfo = awaji;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9F20AE5D1C53E854006659F5 /* awaji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = awaji.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F20AE611C53E855006659F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F20AE631C53E855006659F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9F20AE641C53E855006659F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9F20AE6C1C53E855006659F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F20AE711C53E855006659F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F20AE761C53E855006659F5 /* awajiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = awajiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F20AE7A1C53E855006659F5 /* awajiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = awajiTests.m; sourceTree = "<group>"; };
+		9F20AE7C1C53E855006659F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F20AE811C53E855006659F5 /* awajiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = awajiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F20AE851C53E855006659F5 /* awajiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = awajiUITests.m; sourceTree = "<group>"; };
+		9F20AE871C53E855006659F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F20AE931C53E8F5006659F5 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		9F20AE941C53E8F5006659F5 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F20AE5A1C53E854006659F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F20AE731C53E855006659F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F20AE7E1C53E855006659F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F20AE541C53E854006659F5 = {
+			isa = PBXGroup;
+			children = (
+				9F20AE5F1C53E854006659F5 /* awaji */,
+				9F20AE791C53E855006659F5 /* awajiTests */,
+				9F20AE841C53E855006659F5 /* awajiUITests */,
+				9F20AE5E1C53E854006659F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F20AE5E1C53E854006659F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F20AE5D1C53E854006659F5 /* awaji.app */,
+				9F20AE761C53E855006659F5 /* awajiTests.xctest */,
+				9F20AE811C53E855006659F5 /* awajiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F20AE5F1C53E854006659F5 /* awaji */ = {
+			isa = PBXGroup;
+			children = (
+				9F20AE981C53E96C006659F5 /* Views */,
+				9F20AE971C53E962006659F5 /* ViewControllers */,
+				9F20AE961C53E956006659F5 /* Models */,
+				9F20AE631C53E855006659F5 /* AppDelegate.h */,
+				9F20AE641C53E855006659F5 /* AppDelegate.m */,
+				9F20AE6C1C53E855006659F5 /* Assets.xcassets */,
+				9F20AE711C53E855006659F5 /* Info.plist */,
+				9F20AE601C53E855006659F5 /* Supporting Files */,
+			);
+			path = awaji;
+			sourceTree = "<group>";
+		};
+		9F20AE601C53E855006659F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F20AE611C53E855006659F5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F20AE791C53E855006659F5 /* awajiTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F20AE7A1C53E855006659F5 /* awajiTests.m */,
+				9F20AE7C1C53E855006659F5 /* Info.plist */,
+			);
+			path = awajiTests;
+			sourceTree = "<group>";
+		};
+		9F20AE841C53E855006659F5 /* awajiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9F20AE851C53E855006659F5 /* awajiUITests.m */,
+				9F20AE871C53E855006659F5 /* Info.plist */,
+			);
+			path = awajiUITests;
+			sourceTree = "<group>";
+		};
+		9F20AE961C53E956006659F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9F20AE971C53E962006659F5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F20AE991C53E984006659F5 /* FeedViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9F20AE981C53E96C006659F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9F20AE991C53E984006659F5 /* FeedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9F20AE931C53E8F5006659F5 /* FeedViewController.h */,
+				9F20AE941C53E8F5006659F5 /* FeedViewController.m */,
+			);
+			name = FeedViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F20AE5C1C53E854006659F5 /* awaji */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F20AE8A1C53E855006659F5 /* Build configuration list for PBXNativeTarget "awaji" */;
+			buildPhases = (
+				9F20AE591C53E854006659F5 /* Sources */,
+				9F20AE5A1C53E854006659F5 /* Frameworks */,
+				9F20AE5B1C53E854006659F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = awaji;
+			productName = awaji;
+			productReference = 9F20AE5D1C53E854006659F5 /* awaji.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F20AE751C53E855006659F5 /* awajiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F20AE8D1C53E855006659F5 /* Build configuration list for PBXNativeTarget "awajiTests" */;
+			buildPhases = (
+				9F20AE721C53E855006659F5 /* Sources */,
+				9F20AE731C53E855006659F5 /* Frameworks */,
+				9F20AE741C53E855006659F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F20AE781C53E855006659F5 /* PBXTargetDependency */,
+			);
+			name = awajiTests;
+			productName = awajiTests;
+			productReference = 9F20AE761C53E855006659F5 /* awajiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9F20AE801C53E855006659F5 /* awajiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F20AE901C53E855006659F5 /* Build configuration list for PBXNativeTarget "awajiUITests" */;
+			buildPhases = (
+				9F20AE7D1C53E855006659F5 /* Sources */,
+				9F20AE7E1C53E855006659F5 /* Frameworks */,
+				9F20AE7F1C53E855006659F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F20AE831C53E855006659F5 /* PBXTargetDependency */,
+			);
+			name = awajiUITests;
+			productName = awajiUITests;
+			productReference = 9F20AE811C53E855006659F5 /* awajiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F20AE551C53E854006659F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Keisuke Tatsumi";
+				TargetAttributes = {
+					9F20AE5C1C53E854006659F5 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					9F20AE751C53E855006659F5 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 9F20AE5C1C53E854006659F5;
+					};
+					9F20AE801C53E855006659F5 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 9F20AE5C1C53E854006659F5;
+					};
+				};
+			};
+			buildConfigurationList = 9F20AE581C53E854006659F5 /* Build configuration list for PBXProject "awaji" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F20AE541C53E854006659F5;
+			productRefGroup = 9F20AE5E1C53E854006659F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F20AE5C1C53E854006659F5 /* awaji */,
+				9F20AE751C53E855006659F5 /* awajiTests */,
+				9F20AE801C53E855006659F5 /* awajiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F20AE5B1C53E854006659F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F20AE6D1C53E855006659F5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F20AE741C53E855006659F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F20AE7F1C53E855006659F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F20AE591C53E854006659F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F20AE651C53E855006659F5 /* AppDelegate.m in Sources */,
+				9F20AE951C53E8F5006659F5 /* FeedViewController.m in Sources */,
+				9F20AE621C53E855006659F5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F20AE721C53E855006659F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F20AE7B1C53E855006659F5 /* awajiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F20AE7D1C53E855006659F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F20AE861C53E855006659F5 /* awajiUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F20AE781C53E855006659F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F20AE5C1C53E854006659F5 /* awaji */;
+			targetProxy = 9F20AE771C53E855006659F5 /* PBXContainerItemProxy */;
+		};
+		9F20AE831C53E855006659F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F20AE5C1C53E854006659F5 /* awaji */;
+			targetProxy = 9F20AE821C53E855006659F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9F20AE881C53E855006659F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9F20AE891C53E855006659F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F20AE8B1C53E855006659F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = awaji/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.glorydays.awaji;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9F20AE8C1C53E855006659F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = awaji/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.glorydays.awaji;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9F20AE8E1C53E855006659F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = awajiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.glorydays.awajiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/awaji.app/awaji";
+			};
+			name = Debug;
+		};
+		9F20AE8F1C53E855006659F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = awajiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.glorydays.awajiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/awaji.app/awaji";
+			};
+			name = Release;
+		};
+		9F20AE911C53E855006659F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = awajiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.glorydays.awajiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = awaji;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9F20AE921C53E855006659F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = awajiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.glorydays.awajiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = awaji;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F20AE581C53E854006659F5 /* Build configuration list for PBXProject "awaji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F20AE881C53E855006659F5 /* Debug */,
+				9F20AE891C53E855006659F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F20AE8A1C53E855006659F5 /* Build configuration list for PBXNativeTarget "awaji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F20AE8B1C53E855006659F5 /* Debug */,
+				9F20AE8C1C53E855006659F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9F20AE8D1C53E855006659F5 /* Build configuration list for PBXNativeTarget "awajiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F20AE8E1C53E855006659F5 /* Debug */,
+				9F20AE8F1C53E855006659F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9F20AE901C53E855006659F5 /* Build configuration list for PBXNativeTarget "awajiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F20AE911C53E855006659F5 /* Debug */,
+				9F20AE921C53E855006659F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F20AE551C53E854006659F5 /* Project object */;
+}
