@@ -19,15 +19,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[FeedViewController alloc]init];
-    [self.window makeKeyAndVisible];
-    
     // Parseの初期設定
     [Parse enableLocalDatastore];
     [Parse setApplicationId:@"7gDkV15aDGobquVUUuub2QgHB6CaBynNvReMVeNa"
                   clientKey:@"BhAyzVJ2DNQoYNJJCHUiam5M96PFK4MCX98xgJqt"];
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [[FeedViewController alloc]init];
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

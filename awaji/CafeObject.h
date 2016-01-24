@@ -11,11 +11,13 @@
 
 @interface CafeObject : NSObject
 
+- (void)save;
+
 @property (nonatomic, retain) NSNumber *cafeId;
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSString *place;
 @property (nonatomic, retain) NSString *comment;
-@property (nonatomic, retain) NSString *image;
+@property (nonatomic, retain) UIImage *image;
 @property (nonatomic, retain) NSString *username;
 @property (nonatomic, retain) NSNumber *likeCount;
 @property (nonatomic, retain) NSDate *createDate;

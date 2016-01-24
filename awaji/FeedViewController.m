@@ -27,12 +27,14 @@
     
     [self createTableView];
     
-//    CafeObject *cafeObject = [[CafeObject alloc] init];
-//    cafeObject.name = @"カフェTK";
-//
-//    PFObject *testObject = [PFObject objectWithClassName:NSStringFromClass(CafeObject.class)];
-//    testObject[@"foo"] = [[CafeObject alloc] init];
-//    [testObject saveInBackground];
+    // 保存
+    CafeObject *cafeInfo = [[CafeObject alloc] init];
+    cafeInfo.name = @"カフェTK";
+    cafeInfo.place = @"代々木体育館";
+    cafeInfo.comment = @"すごい激しくて良い";
+    cafeInfo.image = [UIImage imageNamed:@"sampleImage"];
+    cafeInfo.username = @"たつみん";
+    [cafeInfo save];
 }
 
 - (void)createTableView {
