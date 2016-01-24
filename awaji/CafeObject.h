@@ -1,0 +1,23 @@
+//
+//  CafeObject.h
+//  awaji
+//
+//  Created by Genki Ishibashi on 2016/01/24.
+//  Copyright © 2016年 Keisuke Tatsumi. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <Parse/Parse.h>
+
+@interface CafeObject : NSObject
+
+@property (nonatomic, retain) NSNumber *cafeId;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *place;
+@property (nonatomic, retain) NSString *comment;
+@property (nonatomic, retain) NSString *image;
+@property (nonatomic, retain) NSString *username;
+@property (nonatomic, retain) NSNumber *likeCount;
+@property (nonatomic, retain) NSDate *createDate;
+
+@end

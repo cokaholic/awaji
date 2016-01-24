@@ -8,6 +8,8 @@
 
 #import "FeedViewController.h"
 #import "CafeInfoCell.h"
+#import "CafeObject.h"
+#import <Parse/Parse.h>
 
 @interface FeedViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -24,6 +26,13 @@
     _cafeDataArray = [[NSMutableArray alloc]init];
     
     [self createTableView];
+    
+//    CafeObject *cafeObject = [[CafeObject alloc] init];
+//    cafeObject.name = @"カフェTK";
+//
+//    PFObject *testObject = [PFObject objectWithClassName:NSStringFromClass(CafeObject.class)];
+//    testObject[@"foo"] = [[CafeObject alloc] init];
+//    [testObject saveInBackground];
 }
 
 - (void)createTableView {
