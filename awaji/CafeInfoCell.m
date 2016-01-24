@@ -8,6 +8,13 @@
 
 #import "CafeInfoCell.h"
 
+@interface CafeInfoCell ()
+
+@property (nonatomic, strong) UIImageView *thumbnailPlaceholderImageView;
+@property (nonatomic, strong) UIImageView *thumbnailImageView;
+
+@end
+
 @implementation CafeInfoCell
 
 @end

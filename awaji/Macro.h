@@ -23,3 +23,6 @@
 #define NOT_NULL(_instance) (_instance && ![_instance isKindOfClass:[NSNull class]])
 #define CHECK_NULL_STRING(_instance) NOT_NULL(_instance) ? _instance : @""
 #define CHECK_NULL_NUMBER(_instance) NOT_NULL(_instance) ? _instance : @0
+
+// Color
+#define BACKGROUND_COLOR [UIColor whiteColor]
