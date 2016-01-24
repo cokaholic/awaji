@@ -5,6 +5,7 @@
 
 target 'awaji' do
 pod 'Parse'
+pod 'UIColor+Hex'
 end
 
 target 'awajiTests' do

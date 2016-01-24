@@ -13,4 +13,11 @@
 
 extern const CGFloat kNavigationBarHeight;
 
+extern const NSString *kColorCodeWhite;
+extern const NSString *kColorCodeWarmGray;
+extern const NSString *kColorCodeOrange;
+extern const NSString *kColorCodeDarkGreen;
+extern const NSString *kColorCodeDarkBrown;
+extern const NSString *kColorCodeWarmBrown;
+
 @end

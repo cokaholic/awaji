@@ -38,7 +38,7 @@
 - (void)createTableView {
     
     _feedTableView = [[UITableView alloc]initWithFrame:APPFRAME_RECT];
-    _feedTableView.backgroundColor = BACKGROUND_COLOR;
+    _feedTableView.backgroundColor = [UIColor colorWithCSS:(NSString *)kColorCodeBg];
     _feedTableView.dataSource = self;
     _feedTableView.delegate = self;
     [_feedTableView registerClass:[CafeInfoCell class] forCellReuseIdentifier:cafeInfoCellIdetifier];
