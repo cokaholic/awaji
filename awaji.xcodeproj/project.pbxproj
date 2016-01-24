@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		374C6A721C54686A00C3EB54 /* CafeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 374C6A711C54686A00C3EB54 /* CafeObject.m */; };
+		37F06F901C54722E00F776DC /* FavoriteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F06F8F1C54722E00F776DC /* FavoriteObject.m */; };
 		9F20AE621C53E855006659F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AE611C53E855006659F5 /* main.m */; };
 		9F20AE651C53E855006659F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AE641C53E855006659F5 /* AppDelegate.m */; };
 		9F20AE6D1C53E855006659F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F20AE6C1C53E855006659F5 /* Assets.xcassets */; };
@@ -15,6 +17,7 @@
 		9F20AE951C53E8F5006659F5 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AE941C53E8F5006659F5 /* FeedViewController.m */; };
 		9F20AE9D1C5465EA006659F5 /* CafeInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AE9C1C5465EA006659F5 /* CafeInfoCell.m */; };
 		9F20AEA11C5466D3006659F5 /* Const.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AEA01C5466D3006659F5 /* Const.m */; };
+		A55EB9567E0AF7A60BD46CE2 /* libPods-awaji.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06283C3E37790178BA6FA315 /* libPods-awaji.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06283C3E37790178BA6FA315 /* libPods-awaji.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-awaji.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F54906CCAFF1CD54E8C760B /* Pods-awaji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-awaji.debug.xcconfig"; path = "Pods/Target Support Files/Pods-awaji/Pods-awaji.debug.xcconfig"; sourceTree = "<group>"; };
+		374C6A701C54686A00C3EB54 /* CafeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CafeObject.h; sourceTree = "<group>"; };
+		374C6A711C54686A00C3EB54 /* CafeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CafeObject.m; sourceTree = "<group>"; };
+		37F06F8E1C54722E00F776DC /* FavoriteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteObject.h; sourceTree = "<group>"; };
+		37F06F8F1C54722E00F776DC /* FavoriteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteObject.m; sourceTree = "<group>"; };
+		4E305E6FE16996D0E55A4179 /* Pods-awaji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-awaji.release.xcconfig"; path = "Pods/Target Support Files/Pods-awaji/Pods-awaji.release.xcconfig"; sourceTree = "<group>"; };
 		9F20AE5D1C53E854006659F5 /* awaji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = awaji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F20AE611C53E855006659F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9F20AE631C53E855006659F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55EB9567E0AF7A60BD46CE2 /* libPods-awaji.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60A44FC9C3B902D1FDB6C60D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F54906CCAFF1CD54E8C760B /* Pods-awaji.debug.xcconfig */,
+				4E305E6FE16996D0E55A4179 /* Pods-awaji.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9F20AE541C53E854006659F5 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +109,7 @@
 				9F20AE791C53E855006659F5 /* awajiTests */,
 				9F20AE841C53E855006659F5 /* awajiUITests */,
 				9F20AE5E1C53E854006659F5 /* Products */,
+				60A44FC9C3B902D1FDB6C60D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +169,10 @@
 		9F20AE961C53E956006659F5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				374C6A701C54686A00C3EB54 /* CafeObject.h */,
+				374C6A711C54686A00C3EB54 /* CafeObject.m */,
+				37F06F8E1C54722E00F776DC /* FavoriteObject.h */,
+				37F06F8F1C54722E00F776DC /* FavoriteObject.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -203,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F20AE8A1C53E855006659F5 /* Build configuration list for PBXNativeTarget "awaji" */;
 			buildPhases = (
+				6111060945FF7D41544E9DFE /* Check Pods Manifest.lock */,
 				9F20AE591C53E854006659F5 /* Sources */,
 				9F20AE5A1C53E854006659F5 /* Frameworks */,
 				9F20AE5B1C53E854006659F5 /* Resources */,
+				F7EDB554B7E6B7533C596380 /* Embed Pods Frameworks */,
+				C6A7DB818CC20CCEB9D6E22C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -319,6 +347,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6111060945FF7D41544E9DFE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C6A7DB818CC20CCEB9D6E22C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-awaji/Pods-awaji-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7EDB554B7E6B7533C596380 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-awaji/Pods-awaji-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F20AE591C53E854006659F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -327,7 +403,9 @@
 				9F20AEA11C5466D3006659F5 /* Const.m in Sources */,
 				9F20AE9D1C5465EA006659F5 /* CafeInfoCell.m in Sources */,
 				9F20AE651C53E855006659F5 /* AppDelegate.m in Sources */,
+				374C6A721C54686A00C3EB54 /* CafeObject.m in Sources */,
 				9F20AE951C53E8F5006659F5 /* FeedViewController.m in Sources */,
+				37F06F901C54722E00F776DC /* FavoriteObject.m in Sources */,
 				9F20AE621C53E855006659F5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +524,7 @@
 		};
 		9F20AE8B1C53E855006659F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F54906CCAFF1CD54E8C760B /* Pods-awaji.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -459,6 +538,7 @@
 		};
 		9F20AE8C1C53E855006659F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E305E6FE16996D0E55A4179 /* Pods-awaji.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";

@@ -5,6 +5,7 @@
 //  Created by Keisuke_Tatsumi on 2016/01/24.
 //  Copyright © 2016年 Keisuke Tatsumi. All rights reserved.
 //
+#import <Parse/Parse.h>
 
 #import "AppDelegate.h"
 #import "FeedViewController.h"
@@ -22,6 +23,11 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[FeedViewController alloc]init];
     [self.window makeKeyAndVisible];
+    
+    // Parseの初期設定
+    [Parse enableLocalDatastore];
+    [Parse setApplicationId:@"7gDkV15aDGobquVUUuub2QgHB6CaBynNvReMVeNa"
+                  clientKey:@"BhAyzVJ2DNQoYNJJCHUiam5M96PFK4MCX98xgJqt"];
     
     return YES;
 }
