@@ -12,10 +12,10 @@
 
 const CGFloat kDefaultMargin = 10;
 const CGFloat kNavigationBarHeight = 64;
-
+const NSInteger kCafeInfoPageCount = 20;
 NSString *kColorCodeBlack = @"#000000";
 NSString *kColorCodeWhite = @"#FFFFFF";
-NSString *kColorCodeWarmGray = @"#CAC7B2";
+NSString *kColorCodeWarmGray = @"#F6F6F5";
 NSString *kColorCodeOrange = @"#7F4627";
 NSString *kColorCodeDarkGreen = @"295F3A";
 NSString *kColorCodeDarkBrown = @"#21201F";

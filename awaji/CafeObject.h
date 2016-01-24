@@ -11,13 +11,24 @@
 
 @interface CafeObject : NSObject
 
-@property (nonatomic, retain) NSNumber *cafeId;
+@property (nonatomic, retain) NSString *objectId;
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSString *place;
 @property (nonatomic, retain) NSString *comment;
-@property (nonatomic, retain) NSString *image;
+@property (nonatomic, retain) UIImage *image;
 @property (nonatomic, retain) NSString *username;
 @property (nonatomic, retain) NSNumber *likeCount;
 @property (nonatomic, retain) NSDate *createDate;
+
+@end
+
+@interface CafeObjectDto : NSObject
+
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *place;
+@property (nonatomic, retain) NSString *comment;
+@property (nonatomic, retain) PFFile *image;
+@property (nonatomic, retain) NSString *username;
+@property (nonatomic, retain) NSNumber *likeCount;
 
 @end

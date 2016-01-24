@@ -13,6 +13,7 @@
 
 extern const CGFloat kDefaultMargin;
 extern const CGFloat kNavigationBarHeight;
+extern const NSInteger kCafeInfoPageCount;
 
 extern NSString *kColorCodeBlack;
 extern NSString *kColorCodeWhite;

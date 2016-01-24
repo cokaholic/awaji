@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		374C6A721C54686A00C3EB54 /* CafeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 374C6A711C54686A00C3EB54 /* CafeObject.m */; };
 		37F06F901C54722E00F776DC /* FavoriteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F06F8F1C54722E00F776DC /* FavoriteObject.m */; };
+		37F06FD21C5491DE00F776DC /* UIImage+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F06FD11C5491DE00F776DC /* UIImage+Util.m */; };
+		37F06FD61C549CCE00F776DC /* AWParseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F06FD51C549CCE00F776DC /* AWParseManager.m */; };
+		37F06FD91C54A4EB00F776DC /* CafeDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F06FD81C54A4EB00F776DC /* CafeDao.m */; };
 		9F20AE621C53E855006659F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AE611C53E855006659F5 /* main.m */; };
 		9F20AE651C53E855006659F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AE641C53E855006659F5 /* AppDelegate.m */; };
 		9F20AE6D1C53E855006659F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F20AE6C1C53E855006659F5 /* Assets.xcassets */; };
@@ -47,6 +50,12 @@
 		374C6A711C54686A00C3EB54 /* CafeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CafeObject.m; sourceTree = "<group>"; };
 		37F06F8E1C54722E00F776DC /* FavoriteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteObject.h; sourceTree = "<group>"; };
 		37F06F8F1C54722E00F776DC /* FavoriteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteObject.m; sourceTree = "<group>"; };
+		37F06FD01C5491DE00F776DC /* UIImage+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Util.h"; sourceTree = "<group>"; };
+		37F06FD11C5491DE00F776DC /* UIImage+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Util.m"; sourceTree = "<group>"; };
+		37F06FD41C549CCE00F776DC /* AWParseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWParseManager.h; sourceTree = "<group>"; };
+		37F06FD51C549CCE00F776DC /* AWParseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWParseManager.m; sourceTree = "<group>"; };
+		37F06FD71C54A4EB00F776DC /* CafeDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CafeDao.h; sourceTree = "<group>"; };
+		37F06FD81C54A4EB00F776DC /* CafeDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CafeDao.m; sourceTree = "<group>"; };
 		4E305E6FE16996D0E55A4179 /* Pods-awaji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-awaji.release.xcconfig"; path = "Pods/Target Support Files/Pods-awaji/Pods-awaji.release.xcconfig"; sourceTree = "<group>"; };
 		9F20AE5D1C53E854006659F5 /* awaji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = awaji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F20AE611C53E855006659F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -102,6 +111,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37F06FD31C549C9E00F776DC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				37F06FD41C549CCE00F776DC /* AWParseManager.h */,
+				37F06FD51C549CCE00F776DC /* AWParseManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
 		60A44FC9C3B902D1FDB6C60D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +153,7 @@
 		9F20AE5F1C53E854006659F5 /* awaji */ = {
 			isa = PBXGroup;
 			children = (
+				37F06FD31C549C9E00F776DC /* Manager */,
 				9F20AEA91C548E3C006659F5 /* ThirdParty */,
 				9F20AEA41C54764D006659F5 /* Category */,
 				9F20AE9E1C5466B4006659F5 /* Const */,
@@ -184,6 +203,8 @@
 				374C6A711C54686A00C3EB54 /* CafeObject.m */,
 				37F06F8E1C54722E00F776DC /* FavoriteObject.h */,
 				37F06F8F1C54722E00F776DC /* FavoriteObject.m */,
+				37F06FD71C54A4EB00F776DC /* CafeDao.h */,
+				37F06FD81C54A4EB00F776DC /* CafeDao.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -238,6 +259,8 @@
 		9F20AEA41C54764D006659F5 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				37F06FD01C5491DE00F776DC /* UIImage+Util.h */,
+				37F06FD11C5491DE00F776DC /* UIImage+Util.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -455,8 +478,11 @@
 				9F20AEB01C54B301006659F5 /* ConstImage.m in Sources */,
 				9F20AE951C53E8F5006659F5 /* FeedViewController.m in Sources */,
 				37F06F901C54722E00F776DC /* FavoriteObject.m in Sources */,
+				37F06FD61C549CCE00F776DC /* AWParseManager.m in Sources */,
+				37F06FD21C5491DE00F776DC /* UIImage+Util.m in Sources */,
 				9F20AE621C53E855006659F5 /* main.m in Sources */,
 				9F20AEA81C54790F006659F5 /* AWNavigationController.m in Sources */,
+				37F06FD91C54A4EB00F776DC /* CafeDao.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

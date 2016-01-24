@@ -1,18 +1,17 @@
 //
-//  CafeObject.m
+//  AWParseManager.m
 //  awaji
 //
 //  Created by Genki Ishibashi on 2016/01/24.
 //  Copyright © 2016年 Keisuke Tatsumi. All rights reserved.
 //
 
-#import "CafeObject.h"
-#import "UIImage+Util.h"
+#import <Parse/Parse.h>
 
-@implementation CafeObject
+#import "AWParseManager.h"
 
-@end
+@implementation AWParseManager
 
-@implementation CafeObjectDto
+//+ (NSArray *)
 
 @end
