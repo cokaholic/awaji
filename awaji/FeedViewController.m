@@ -8,6 +8,24 @@
 
 #import "FeedViewController.h"
 
+@interface FeedViewController () <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) UITableView *feedTableView;
+
+@end
+
 @implementation FeedViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self createTableView];
+}
+
+- (void)createTableView {
+    
+    _feedTableView = [[UITableView alloc]initWithFrame:APPFRAME_RECT];
+    [self.view addSubview:_feedTableView];
+}
 
 @end

@@ -13,6 +13,8 @@
 		9F20AE7B1C53E855006659F5 /* awajiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AE7A1C53E855006659F5 /* awajiTests.m */; };
 		9F20AE861C53E855006659F5 /* awajiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AE851C53E855006659F5 /* awajiUITests.m */; };
 		9F20AE951C53E8F5006659F5 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AE941C53E8F5006659F5 /* FeedViewController.m */; };
+		9F20AE9D1C5465EA006659F5 /* CafeInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AE9C1C5465EA006659F5 /* CafeInfoCell.m */; };
+		9F20AEA11C5466D3006659F5 /* Const.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AEA01C5466D3006659F5 /* Const.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,12 @@
 		9F20AE871C53E855006659F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F20AE931C53E8F5006659F5 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
 		9F20AE941C53E8F5006659F5 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		9F20AE9B1C5465EA006659F5 /* CafeInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CafeInfoCell.h; sourceTree = "<group>"; };
+		9F20AE9C1C5465EA006659F5 /* CafeInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CafeInfoCell.m; sourceTree = "<group>"; };
+		9F20AE9F1C5466D3006659F5 /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		9F20AEA01C5466D3006659F5 /* Const.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Const.m; sourceTree = "<group>"; };
+		9F20AEA21C5466E1006659F5 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		9F20AEA31C54671B006659F5 /* awaji-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "awaji-PrefixHeader.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 		9F20AE5F1C53E854006659F5 /* awaji */ = {
 			isa = PBXGroup;
 			children = (
+				9F20AE9E1C5466B4006659F5 /* Const */,
 				9F20AE981C53E96C006659F5 /* Views */,
 				9F20AE971C53E962006659F5 /* ViewControllers */,
 				9F20AE961C53E956006659F5 /* Models */,
@@ -113,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				9F20AE611C53E855006659F5 /* main.m */,
+				9F20AEA31C54671B006659F5 /* awaji-PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -153,6 +163,7 @@
 		9F20AE981C53E96C006659F5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9F20AE9A1C5465BD006659F5 /* CafeInfoCell */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -164,6 +175,25 @@
 				9F20AE941C53E8F5006659F5 /* FeedViewController.m */,
 			);
 			name = FeedViewController;
+			sourceTree = "<group>";
+		};
+		9F20AE9A1C5465BD006659F5 /* CafeInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				9F20AE9B1C5465EA006659F5 /* CafeInfoCell.h */,
+				9F20AE9C1C5465EA006659F5 /* CafeInfoCell.m */,
+			);
+			name = CafeInfoCell;
+			sourceTree = "<group>";
+		};
+		9F20AE9E1C5466B4006659F5 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				9F20AE9F1C5466D3006659F5 /* Const.h */,
+				9F20AEA01C5466D3006659F5 /* Const.m */,
+				9F20AEA21C5466E1006659F5 /* Macro.h */,
+			);
+			name = Const;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +324,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F20AEA11C5466D3006659F5 /* Const.m in Sources */,
+				9F20AE9D1C5465EA006659F5 /* CafeInfoCell.m in Sources */,
 				9F20AE651C53E855006659F5 /* AppDelegate.m in Sources */,
 				9F20AE951C53E8F5006659F5 /* FeedViewController.m in Sources */,
 				9F20AE621C53E855006659F5 /* main.m in Sources */,
@@ -417,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "awaji/awaji-PrefixHeader.pch";
 				INFOPLIST_FILE = awaji/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.glorydays.awaji;
@@ -429,6 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "awaji/awaji-PrefixHeader.pch";
 				INFOPLIST_FILE = awaji/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.glorydays.awaji;
@@ -503,6 +537,7 @@
 				9F20AE8C1C53E855006659F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F20AE8D1C53E855006659F5 /* Build configuration list for PBXNativeTarget "awajiTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +546,7 @@
 				9F20AE8F1C53E855006659F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F20AE901C53E855006659F5 /* Build configuration list for PBXNativeTarget "awajiUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +555,7 @@
 				9F20AE921C53E855006659F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
