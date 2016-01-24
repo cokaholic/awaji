@@ -10,9 +10,11 @@
 #import "CafeInfoCell.h"
 #import "CafeObject.h"
 #import <Parse/Parse.h>
+#import "UINavigationBar+Awesome.h"
 
 @interface FeedViewController () <UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, strong) UIImageView *backgroundImageView;
 @property (nonatomic, strong) UITableView *feedTableView;
 @property (nonatomic, strong) NSMutableArray *cafeDataArray;
 
@@ -23,9 +25,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     _cafeDataArray = [[NSMutableArray alloc]init];
     
-    [self createTableView];
+    CafeObject *cafeObject = [[CafeObject alloc]init];
+    cafeObject.name = @"スターバックスコーヒー 安土桃山駅前店@がんばらない";
+    cafeObject.username = @"TestUserテストんああああああ";
+    cafeObject.place = @"滋賀・サターン";
+    cafeObject.likeCount = @1000;
+    cafeObject.createDate = [NSDate date];
+    
+    [_cafeDataArray addObject:cafeObject];
+    [_cafeDataArray addObject:cafeObject];
+    [_cafeDataArray addObject:cafeObject];
+    [_cafeDataArray addObject:cafeObject];
+    
+    [self configNavigationBar];
+    [self configBackgroundImageView];
+    [self configTableView];
     
 //    CafeObject *cafeObject = [[CafeObject alloc] init];
 //    cafeObject.name = @"カフェTK";
@@ -35,14 +55,63 @@
 //    [testObject saveInBackground];
 }
 
-- (void)createTableView {
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+    _feedTableView.delegate = self;
+    [self scrollViewDidScroll:_feedTableView];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    _feedTableView.delegate = nil;
+    [self.navigationController.navigationBar lt_reset];
+}
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    [self updateFrame];
+}
+
+- (void)configNavigationBar {
     
-    _feedTableView = [[UITableView alloc]initWithFrame:APPFRAME_RECT];
-    _feedTableView.backgroundColor = [UIColor colorWithCSS:(NSString *)kColorCodeBg];
+    [self.navigationController.navigationBar lt_setBackgroundColor:[UIColor clearColor]];
+}
+
+- (void)configBackgroundImageView {
+    
+    _backgroundImageView = [[UIImageView alloc]init];
+    _backgroundImageView.backgroundColor = [UIColor clearColor];
+    _backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
+    _backgroundImageView.image = [UIImage imageNamed:kImageFeedBackground];
+    [self.view addSubview:_backgroundImageView];
+    
+    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+    UIVisualEffectView *visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+    visualEffectView.frame = self.view.bounds;
+    visualEffectView.alpha = 0.94;
+    [self.view addSubview:visualEffectView];
+}
+
+- (void)configTableView {
+    
+    _feedTableView = [[UITableView alloc]init];
+    _feedTableView.backgroundColor = [UIColor clearColor];
     _feedTableView.dataSource = self;
     _feedTableView.delegate = self;
     [_feedTableView registerClass:[CafeInfoCell class] forCellReuseIdentifier:cafeInfoCellIdetifier];
+    _feedTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    _feedTableView.showsVerticalScrollIndicator = NO;
+    _feedTableView.contentInset = UIEdgeInsetsMake(kNavigationBarHeight, 0, 0, 0);
     [self.view addSubview:_feedTableView];
+}
+
+- (void)updateFrame {
+    
+    _backgroundImageView.frame = self.view.bounds;
+    _feedTableView.frame = self.view.bounds;
 }
 
 #pragma mark - UITableView DataSource
@@ -67,14 +136,38 @@
                                   reuseIdentifier:cafeInfoCellIdetifier];
     }
     
+    if (_cafeDataArray.count > 0) {
+        CafeObject *cafeObject = (CafeObject *)_cafeDataArray[indexPath.row];
+        [cell setCellData:cafeObject withParentWidth:_feedTableView.width];
+    }
+    
     return cell;
 }
 
 #pragma mark - UITableView Delegate
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return _feedTableView.width*2/3 + 42;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark - UIScrollView Delegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    UIColor * color = [UIColor colorWithCSS:kColorCodeBlack];
+    CGFloat offsetY = scrollView.contentOffset.y;
+    CGFloat alpha = MIN(0.9, 0.9 - (- offsetY / kNavigationBarHeight));
+    
+    if (alpha<0) {
+        alpha = 0;
+    }
+    
+    [self.navigationController.navigationBar lt_setBackgroundColor:[color colorWithAlphaComponent:alpha]];
 }
 
 #pragma mark - ReceiveMemoryWarning

@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class CafeObject;
+
 static NSString *cafeInfoCellIdetifier = @"CafeInfoCell";
 
 @interface CafeInfoCell : UITableViewCell
+
+- (void)setCellData:(CafeObject *)cafeObject withParentWidth:(CGFloat)parentWidth;
 
 @end

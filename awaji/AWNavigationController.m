@@ -27,6 +27,7 @@
 
 - (void)configNavigationBar {
     
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 
 - (void)didReceiveMemoryWarning {

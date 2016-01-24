@@ -8,6 +8,7 @@
 
 // App Frame
 #define APPFRAME_RECT [UIScreen mainScreen].applicationFrame
+#define STATUSBAR_RECT [UIApplication sharedApplication].statusBarFrame
 
 // Screen Rect Percent
 #define SCREEN_RECT_PERCENT [UIScreen mainScreen].applicationFrame.size.width/320.0f

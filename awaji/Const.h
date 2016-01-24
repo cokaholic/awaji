@@ -11,13 +11,16 @@
 
 @interface Const : NSObject
 
+extern const CGFloat kDefaultMargin;
 extern const CGFloat kNavigationBarHeight;
 
-extern const NSString *kColorCodeWhite;
-extern const NSString *kColorCodeWarmGray;
-extern const NSString *kColorCodeOrange;
-extern const NSString *kColorCodeDarkGreen;
-extern const NSString *kColorCodeDarkBrown;
-extern const NSString *kColorCodeWarmBrown;
+extern NSString *kColorCodeBlack;
+extern NSString *kColorCodeWhite;
+extern NSString *kColorCodeWarmGray;
+extern NSString *kColorCodeOrange;
+extern NSString *kColorCodeDarkGreen;
+extern NSString *kColorCodeDarkBrown;
+extern NSString *kColorCodeWarmBrown;
+extern NSString *kColorCodeHeartPink;
 
 @end

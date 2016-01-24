@@ -6,6 +6,8 @@
 target 'awaji' do
 pod 'Parse'
 pod 'UIColor+Hex'
+pod 'ViewUtils'
+pod 'DPMeterView', '0.0.1'
 end
 
 target 'awajiTests' do
