@@ -12,6 +12,7 @@
 @interface Const : NSObject
 
 extern const CGFloat kNavigationBarHeight;
+extern const NSInteger kCafeInfoPageCount;
 
 extern NSString *kColorCodeWhite;
 extern NSString *kColorCodeWarmGray;

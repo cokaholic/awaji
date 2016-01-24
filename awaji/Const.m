@@ -11,6 +11,7 @@
 @implementation Const
 
 const CGFloat kNavigationBarHeight = 64;
+const NSInteger kCafeInfoPageCount = 20;
 NSString *kColorCodeWhite = @"#FFFFFF";
 NSString *kColorCodeWarmGray = @"#F6F6F5";
 NSString *kColorCodeOrange = @"#7F4627";

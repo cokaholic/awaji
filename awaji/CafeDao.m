@@ -54,8 +54,11 @@ NSString *kCreatedDateKey = @"createdAt";
     }];
 }
 
-+ (void)find:(QueryArrayResultsBlock)block {
++ (void)findWithOffset:(NSInteger)offset count:(NSInteger)count block:(QueryArrayResultsBlock)block {
     PFQuery *query = [PFQuery queryWithClassName:NSStringFromClass([CafeObjectDto class])];
+    [query orderByDescending:kCreatedDateKey];
+    query.limit = kCafeInfoPageCount;
+    query.skip = offset;
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         NSMutableArray *infoList = [NSMutableArray array];
         for (PFObject *object in objects) {
@@ -68,9 +71,12 @@ NSString *kCreatedDateKey = @"createdAt";
             c.image = image;
             c.username = object[kUserNameKey];
             c.likeCount = object[kLikeCountKey];
+            c.createDate = object.createdAt;
             [infoList addObject:c];
         }
         block(infoList, error);
     }];
 }
+
+//+ (void)find
 @end

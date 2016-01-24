@@ -29,7 +29,10 @@
     [self createTableView];
     
 //    [self saveCafeInfo];
-    [self findAll];
+//    [self saveCafeInfo];
+//    [self saveCafeInfo];
+//    [self saveCafeInfo];
+    [self findWithOffset:20];
 //    [self plusLike];
 //    [self remove];
     
@@ -47,11 +50,13 @@
 
 #pragma mark - データいじるサンプル
 
-// 取得
-- (void)findAll {
-    [CafeDao find:^(NSArray *cafeInfoList, NSError *error){
+/**
+ * データの取得
+ */
+- (void)findWithOffset:(NSInteger)offset {
+    [CafeDao findWithOffset:20 count:kCafeInfoPageCount block:^(NSArray *cafeInfoList, NSError *error){
         for (CafeObject *cafeInfo in cafeInfoList) {
-            NSLog(@"cafeInfo: %@", [cafeInfo description]);
+            NSLog(@"name: %@", cafeInfo.createDate);
         }
     }];
 }
