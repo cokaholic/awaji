@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		374C6A721C54686A00C3EB54 /* CafeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 374C6A711C54686A00C3EB54 /* CafeObject.m */; };
 		37F06F901C54722E00F776DC /* FavoriteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F06F8F1C54722E00F776DC /* FavoriteObject.m */; };
+		37F06FD21C5491DE00F776DC /* UIImage+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F06FD11C5491DE00F776DC /* UIImage+Util.m */; };
+		37F06FD61C549CCE00F776DC /* AWParseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F06FD51C549CCE00F776DC /* AWParseManager.m */; };
+		37F06FD91C54A4EB00F776DC /* CafeDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F06FD81C54A4EB00F776DC /* CafeDao.m */; };
 		9F20AE621C53E855006659F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AE611C53E855006659F5 /* main.m */; };
 		9F20AE651C53E855006659F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AE641C53E855006659F5 /* AppDelegate.m */; };
 		9F20AE6D1C53E855006659F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F20AE6C1C53E855006659F5 /* Assets.xcassets */; };
@@ -17,6 +20,8 @@
 		9F20AE951C53E8F5006659F5 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AE941C53E8F5006659F5 /* FeedViewController.m */; };
 		9F20AE9D1C5465EA006659F5 /* CafeInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AE9C1C5465EA006659F5 /* CafeInfoCell.m */; };
 		9F20AEA11C5466D3006659F5 /* Const.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AEA01C5466D3006659F5 /* Const.m */; };
+		9F20AEA81C54790F006659F5 /* AWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AEA71C54790F006659F5 /* AWNavigationController.m */; };
+		9F20AEAD1C548F03006659F5 /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F20AEAC1C548F03006659F5 /* UINavigationBar+Awesome.m */; };
 		A55EB9567E0AF7A60BD46CE2 /* libPods-awaji.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06283C3E37790178BA6FA315 /* libPods-awaji.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +49,12 @@
 		374C6A711C54686A00C3EB54 /* CafeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CafeObject.m; sourceTree = "<group>"; };
 		37F06F8E1C54722E00F776DC /* FavoriteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteObject.h; sourceTree = "<group>"; };
 		37F06F8F1C54722E00F776DC /* FavoriteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteObject.m; sourceTree = "<group>"; };
+		37F06FD01C5491DE00F776DC /* UIImage+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Util.h"; sourceTree = "<group>"; };
+		37F06FD11C5491DE00F776DC /* UIImage+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Util.m"; sourceTree = "<group>"; };
+		37F06FD41C549CCE00F776DC /* AWParseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWParseManager.h; sourceTree = "<group>"; };
+		37F06FD51C549CCE00F776DC /* AWParseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWParseManager.m; sourceTree = "<group>"; };
+		37F06FD71C54A4EB00F776DC /* CafeDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CafeDao.h; sourceTree = "<group>"; };
+		37F06FD81C54A4EB00F776DC /* CafeDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CafeDao.m; sourceTree = "<group>"; };
 		4E305E6FE16996D0E55A4179 /* Pods-awaji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-awaji.release.xcconfig"; path = "Pods/Target Support Files/Pods-awaji/Pods-awaji.release.xcconfig"; sourceTree = "<group>"; };
 		9F20AE5D1C53E854006659F5 /* awaji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = awaji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F20AE611C53E855006659F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -65,6 +76,10 @@
 		9F20AEA01C5466D3006659F5 /* Const.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Const.m; sourceTree = "<group>"; };
 		9F20AEA21C5466E1006659F5 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 		9F20AEA31C54671B006659F5 /* awaji-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "awaji-PrefixHeader.pch"; sourceTree = "<group>"; };
+		9F20AEA61C54790F006659F5 /* AWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWNavigationController.h; sourceTree = "<group>"; };
+		9F20AEA71C54790F006659F5 /* AWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWNavigationController.m; sourceTree = "<group>"; };
+		9F20AEAB1C548F03006659F5 /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		9F20AEAC1C548F03006659F5 /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37F06FD31C549C9E00F776DC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				37F06FD41C549CCE00F776DC /* AWParseManager.h */,
+				37F06FD51C549CCE00F776DC /* AWParseManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
 		60A44FC9C3B902D1FDB6C60D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +150,9 @@
 		9F20AE5F1C53E854006659F5 /* awaji */ = {
 			isa = PBXGroup;
 			children = (
+				37F06FD31C549C9E00F776DC /* Manager */,
+				9F20AEA91C548E3C006659F5 /* ThirdParty */,
+				9F20AEA41C54764D006659F5 /* Category */,
 				9F20AE9E1C5466B4006659F5 /* Const */,
 				9F20AE981C53E96C006659F5 /* Views */,
 				9F20AE971C53E962006659F5 /* ViewControllers */,
@@ -173,6 +200,8 @@
 				374C6A711C54686A00C3EB54 /* CafeObject.m */,
 				37F06F8E1C54722E00F776DC /* FavoriteObject.h */,
 				37F06F8F1C54722E00F776DC /* FavoriteObject.m */,
+				37F06FD71C54A4EB00F776DC /* CafeDao.h */,
+				37F06FD81C54A4EB00F776DC /* CafeDao.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -180,6 +209,7 @@
 		9F20AE971C53E962006659F5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9F20AEA51C5478CC006659F5 /* NavigationController */,
 				9F20AE991C53E984006659F5 /* FeedViewController */,
 			);
 			name = ViewControllers;
@@ -219,6 +249,41 @@
 				9F20AEA21C5466E1006659F5 /* Macro.h */,
 			);
 			name = Const;
+			sourceTree = "<group>";
+		};
+		9F20AEA41C54764D006659F5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				37F06FD01C5491DE00F776DC /* UIImage+Util.h */,
+				37F06FD11C5491DE00F776DC /* UIImage+Util.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		9F20AEA51C5478CC006659F5 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				9F20AEA61C54790F006659F5 /* AWNavigationController.h */,
+				9F20AEA71C54790F006659F5 /* AWNavigationController.m */,
+			);
+			name = NavigationController;
+			sourceTree = "<group>";
+		};
+		9F20AEA91C548E3C006659F5 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				9F20AEAA1C548EEB006659F5 /* LTNavigationBar */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		9F20AEAA1C548EEB006659F5 /* LTNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				9F20AEAB1C548F03006659F5 /* UINavigationBar+Awesome.h */,
+				9F20AEAC1C548F03006659F5 /* UINavigationBar+Awesome.m */,
+			);
+			name = LTNavigationBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,9 +469,14 @@
 				9F20AE9D1C5465EA006659F5 /* CafeInfoCell.m in Sources */,
 				9F20AE651C53E855006659F5 /* AppDelegate.m in Sources */,
 				374C6A721C54686A00C3EB54 /* CafeObject.m in Sources */,
+				9F20AEAD1C548F03006659F5 /* UINavigationBar+Awesome.m in Sources */,
 				9F20AE951C53E8F5006659F5 /* FeedViewController.m in Sources */,
 				37F06F901C54722E00F776DC /* FavoriteObject.m in Sources */,
+				37F06FD61C549CCE00F776DC /* AWParseManager.m in Sources */,
+				37F06FD21C5491DE00F776DC /* UIImage+Util.m in Sources */,
 				9F20AE621C53E855006659F5 /* main.m in Sources */,
+				9F20AEA81C54790F006659F5 /* AWNavigationController.m in Sources */,
+				37F06FD91C54A4EB00F776DC /* CafeDao.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

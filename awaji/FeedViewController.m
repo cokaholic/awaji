@@ -9,6 +9,7 @@
 #import "FeedViewController.h"
 #import "CafeInfoCell.h"
 #import "CafeObject.h"
+#import "CafeDao.h"
 #import <Parse/Parse.h>
 
 @interface FeedViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -27,24 +28,74 @@
     
     [self createTableView];
     
-    // 保存
-    CafeObject *cafeInfo = [[CafeObject alloc] init];
-    cafeInfo.name = @"カフェTK";
-    cafeInfo.place = @"代々木体育館";
-    cafeInfo.comment = @"すごい激しくて良い";
-    cafeInfo.image = [UIImage imageNamed:@"sampleImage"];
-    cafeInfo.username = @"たつみん";
-    [cafeInfo save];
+//    [self saveCafeInfo];
+    [self findAll];
+//    [self plusLike];
+//    [self remove];
+    
 }
 
 - (void)createTableView {
     
     _feedTableView = [[UITableView alloc]initWithFrame:APPFRAME_RECT];
-    _feedTableView.backgroundColor = BACKGROUND_COLOR;
+    _feedTableView.backgroundColor = [UIColor colorWithCSS:kColorCodeWarmGray];
     _feedTableView.dataSource = self;
     _feedTableView.delegate = self;
     [_feedTableView registerClass:[CafeInfoCell class] forCellReuseIdentifier:cafeInfoCellIdetifier];
     [self.view addSubview:_feedTableView];
+}
+
+#pragma mark - データいじるサンプル
+
+// 取得
+- (void)findAll {
+    [CafeDao find:^(NSArray *cafeInfoList, NSError *error){
+        for (CafeObject *cafeInfo in cafeInfoList) {
+            NSLog(@"cafeInfo: %@", [cafeInfo description]);
+        }
+    }];
+}
+
+// 保存
+- (void)saveCafeInfo {
+    // dto作製
+    CafeObject *cafeInfo = [[CafeObject alloc] init];
+    cafeInfo.name = @"カフェTK";
+    cafeInfo.place = @"代々木体育館";
+    cafeInfo.comment = @"つまんなくなくはない";
+    cafeInfo.image = [UIImage imageNamed:@"sample_image"];
+    cafeInfo.username = @"たつみん";
+    
+    // 保存処理
+    [CafeDao save:(cafeInfo) block:^(BOOL succeeded, NSError *error){
+        if (error) {
+            NSLog(@"error: %@", error);
+            return;
+        }
+        if (succeeded) {
+            NSLog(@"保存に成功しました");
+        }else {
+            NSLog(@"保存に失敗しました");
+        }
+    }];
+}
+
+// イイねを増やす
+- (void)plusLike {
+    [CafeDao incrementLikeCount:@"JjwujEOroJ" block: ^(BOOL succeeded, NSError *error){
+        if (succeeded) {
+            NSLog(@"success");
+        }
+    }];
+}
+
+// 削除
+- (void)remove {
+    [CafeDao remove:@"JjwujEOroJ" block:^(BOOL succeeded, NSError *error){
+        if (succeeded) {
+            NSLog(@"success");
+        }
+    }];
 }
 
 #pragma mark - UITableView DataSource

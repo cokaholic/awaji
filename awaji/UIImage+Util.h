@@ -1,18 +1,15 @@
 //
-//  CafeObject.m
+//  UIImage+Util.h
 //  awaji
 //
 //  Created by Genki Ishibashi on 2016/01/24.
 //  Copyright © 2016年 Keisuke Tatsumi. All rights reserved.
 //
 
-#import "CafeObject.h"
-#import "UIImage+Util.h"
+#import <Foundation/Foundation.h>
 
-@implementation CafeObject
+@interface UIImage(Util)
 
-@end
-
-@implementation CafeObjectDto
+- (NSString *)convertToBase64;
 
 @end

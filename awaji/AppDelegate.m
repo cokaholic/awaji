@@ -9,6 +9,7 @@
 
 #import "AppDelegate.h"
 #import "FeedViewController.h"
+#import "AWNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -26,7 +27,7 @@
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[FeedViewController alloc]init];
+    self.window.rootViewController = [[AWNavigationController alloc]initWithRootViewController:[[FeedViewController alloc]init]];
     [self.window makeKeyAndVisible];
     
     return YES;
